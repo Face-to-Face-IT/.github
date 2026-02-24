@@ -1,0 +1,92 @@
+name: Node.js CI
+
+on:
+  workflow_call:
+    inputs:
+      node-version:
+        description: Node.js version
+        type: string
+        default: "22"
+      run-lint:
+        description: Run linting step
+        type: boolean
+        default: true
+      lint-command:
+        description: Lint command to run
+        type: string
+        default: "pnpm lint"
+      run-typecheck:
+        description: Run type checking step
+        type: boolean
+        default: true
+      typecheck-command:
+        description: Type check command to run
+        type: string
+        default: "pnpm typecheck"
+      run-test:
+        description: Run test step
+        type: boolean
+        default: true
+      test-command:
+        description: Test command to run
+        type: string
+        default: "pnpm test:run"
+      run-build:
+        description: Run build step
+        type: boolean
+        default: true
+      build-command:
+        description: Build command to run
+        type: string
+        default: "pnpm build"
+      install-command:
+        description: Dependency install command
+        type: string
+        default: "pnpm install --frozen-lockfile"
+      pre-run-command:
+        description: Optional command to run after install but before quality gates (e.g. nuxt prepare)
+        type: string
+        default: ""
+      needs-github-packages:
+        description: Whether to configure GitHub Packages npm auth
+        type: boolean
+        default: false
+    secrets:
+      github-token:
+        description: GitHub token (used for GitHub Packages auth if needed)
+        required: false
+
+jobs:
+  quality:
+    name: Quality Gates
+    runs-on: blacksmith-4vcpu-ubuntu-2404
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: Face-to-Face-IT/.github/actions/setup-node@main
+        with:
+          node-version: ${{ inputs.node-version }}
+          install-command: ${{ inputs.install-command }}
+          github-packages-token: ${{ inputs.needs-github-packages && secrets.github-token || '' }}
+
+      - name: Pre-run command
+        if: inputs.pre-run-command != ''
+        run: ${{ inputs.pre-run-command }}
+
+      - name: Lint
+        if: inputs.run-lint
+        run: ${{ inputs.lint-command }}
+
+      - name: Type check
+        if: inputs.run-typecheck
+        run: ${{ inputs.typecheck-command }}
+
+      - name: Test
+        if: inputs.run-test
+        run: ${{ inputs.test-command }}
+
+      - name: Build
+        if: inputs.run-build
+        run: ${{ inputs.build-command }}
