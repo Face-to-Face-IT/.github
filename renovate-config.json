@@ -1,0 +1,63 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Shared Renovate preset for the Face-to-Face-IT org",
+  "extends": [
+    "config:recommended",
+    ":semanticCommits",
+    ":maintainLockFilesWeekly",
+    "docker:pinDigests",
+    "helpers:pinGitHubActionDigests"
+  ],
+  "labels": ["dependencies"],
+  "schedule": ["before 6am on monday"],
+  "timezone": "America/Chicago",
+  "prConcurrentLimit": 10,
+  "prHourlyLimit": 4,
+  "platformAutomerge": true,
+  "packageRules": [
+    {
+      "description": "Automerge minor and patch updates",
+      "matchUpdateTypes": ["minor", "patch", "digest"],
+      "automerge": true
+    },
+    {
+      "description": "Group all GitHub Actions updates",
+      "matchManagers": ["github-actions"],
+      "groupName": "github-actions",
+      "automerge": true
+    },
+    {
+      "description": "Group internal @face-to-face-it packages",
+      "matchPackagePatterns": ["^@face-to-face-it/"],
+      "groupName": "face-to-face-it",
+      "automerge": false,
+      "schedule": ["at any time"]
+    },
+    {
+      "description": "Group ESLint ecosystem",
+      "matchPackagePatterns": ["eslint"],
+      "groupName": "eslint"
+    },
+    {
+      "description": "Group TypeScript ecosystem",
+      "matchPackagePatterns": ["^typescript", "^@types/"],
+      "groupName": "typescript"
+    },
+    {
+      "description": "Group Vitest ecosystem",
+      "matchPackagePatterns": ["^vitest", "^@vitest/"],
+      "groupName": "vitest"
+    },
+    {
+      "description": "Disable resolutions/overrides updates",
+      "matchDepTypes": ["resolutions", "overrides"],
+      "enabled": false
+    },
+    {
+      "description": "Pin Docker base image digests for reproducibility",
+      "matchDatasources": ["docker"],
+      "pinDigests": true
+    }
+  ],
+  "postUpdateOptions": ["pnpmDedupe"]
+}
