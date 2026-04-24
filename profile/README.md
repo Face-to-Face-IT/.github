@@ -12,11 +12,11 @@ We combine direct practice experience with product, platform, and delivery exper
 
 ## Focus Areas
 
-- Child welfare and human services delivery
-- Multi-tenant platform and application development
-- Directus customization and extension work
-- Infrastructure automation and cloud delivery
-- Process documentation, training, and implementation support
+- Child welfare modernization and human services improvement
+- Support for Native American communities and tribal programs
+- Case management platforms and workflow enablement
+- Process mapping, documentation, and training delivery
+- Secure cloud operations and long-term technology support
 
 ## How We Work
 
