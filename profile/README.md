@@ -1,3 +1,5 @@
+![Face-to-Face IT banner](./f2f.png)
+
 # Welcome to Face-to-Face IT
 
 Face-to-Face IT builds and operates software for child welfare and human services teams.
