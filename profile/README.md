@@ -1,57 +1,23 @@
-# Welcome to Face-to-Face-IT
+# Welcome to Face-to-Face IT
 
-**Face-to-Face IT** is a specialized development organization focused on creating innovative extensions and integrations for Directus CMS and related technologies.
+Face-to-Face IT builds and operates software for child welfare and human services teams.
 
-## 🚀 What We Do
+## What We Do
 
-We develop and maintain high-quality extensions, hooks, interfaces, and custom modules that extend the capabilities of Directus CMS. Our projects range from workflow automation to specialized data management solutions.
+We develop and support the platform, tooling, and operational systems that power multi-tenant case management and related workflows. Our work spans application development, platform engineering, infrastructure automation, and documentation.
 
-## 📦 Our Projects
+## Focus Areas
 
-### Directus Extensions
-Our main repository containing a comprehensive suite of Directus extensions:
-- **Auto-Set Case Hook** - Automatic case handling hook
-- **Case Participant Role Interface** - Specialized interface for case participant roles
-- **Case with Intake Interface** - Intake form interface
-- **Cases Tree Layout** - Hierarchical tree layout for cases
-- **Email Bundle** - Email display, hook, and interface components
-- **Phone Bundle** - Phone number display, hook, and interface components
-- **Populate Case Forms** - Dynamic case form population
-- **Process Map Bundle** - Process mapping and visualization
-- **Service Plan Goals Interface** - Service planning interface
-- **SSN Bundle** - Secure SSN handling components
-- **Workflow Bundle** - Workflow automation and management
+- Multi-tenant platform development
+- Directus-based product customization and extension work
+- Internal tooling and delivery automation
+- Cloud infrastructure and deployment pipelines
+- Documentation, implementation guidance, and operational support
 
-📍 **Repository**: [directus-extensions](https://github.com/Face-to-Face-IT/directus-extensions)
+## How We Work
 
-## 🛠️ Technology Stack
+We prioritize maintainability, security, and repeatable delivery. Much of the work in this organization supports internal systems and client environments, so not every repository is publicly visible.
 
-- **Directus CMS** - Headless CMS
-- **TypeScript** - Type-safe development
-- **Vue.js** - Frontend components
-- **Node.js** - Backend services
-- **pnpm** - Package management
-- **Turborepo** - Monorepo management
+## Learn More
 
-## 📋 Repository Structure
-
-This organization uses a **monorepo** structure powered by Turborepo with:
-- Multiple extension packages in the `extensions/` directory
-- Shared configurations in the `packages/` directory
-- Shared ESLint and TypeScript configurations
-
-## 👥 Getting Involved
-
-We welcome contributions! If you're interested in extending Directus CMS or collaborating with us:
-1. Check out our repositories
-2. Review the README files in individual extension packages
-3. Submit issues or pull requests
-
-## 📞 Contact & Links
-
-- **GitHub Organization**: [github.com/Face-to-Face-IT](https://github.com/Face-to-Face-IT)
-- **Main Repository**: [directus-extensions](https://github.com/Face-to-Face-IT/directus-extensions)
-
----
-
-**Built with ❤️ by Face-to-Face-IT**
+- GitHub Organization: [github.com/Face-to-Face-IT](https://github.com/Face-to-Face-IT)
