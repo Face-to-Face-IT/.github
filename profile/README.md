@@ -2,24 +2,20 @@
 
 # Welcome to Face-to-Face IT
 
-Face-to-Face IT builds and operates software for child welfare and human services teams.
+Face-to-Face Integrated Technologies helps human services teams navigate process, practice, and technology for service delivery. We primarily work with Native American communities and child welfare programs. Visit [facetofaceit.com](https://facetofaceit.com/).
 
 ## What We Do
 
-We develop and support the platform, tooling, and operational systems that power multi-tenant case management and related workflows. Our work spans application development, platform engineering, infrastructure automation, and documentation.
+We combine direct practice experience with product, platform, and delivery expertise to support child welfare and human services organizations. Our work includes process improvement, documentation, training, quality improvement, and the technology systems that support those programs.
 
 ## Focus Areas
 
-- Multi-tenant platform development
-- Directus-based product customization and extension work
-- Internal tooling and delivery automation
-- Cloud infrastructure and deployment pipelines
-- Documentation, implementation guidance, and operational support
+- Child welfare and human services delivery
+- Multi-tenant platform and application development
+- Directus customization and extension work
+- Infrastructure automation and cloud delivery
+- Process documentation, training, and implementation support
 
 ## How We Work
 
-We prioritize maintainability, security, and repeatable delivery. Much of the work in this organization supports internal systems and client environments, so not every repository is publicly visible.
-
-## Learn More
-
-- GitHub Organization: [github.com/Face-to-Face-IT](https://github.com/Face-to-Face-IT)
+We bring together practice knowledge and technical delivery to build systems that are maintainable, secure, and aligned to real-world agency operations. Much of the work in this organization supports internal systems and client environments, so not every repository is publicly visible.
