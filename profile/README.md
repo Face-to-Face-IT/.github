@@ -2,7 +2,9 @@
 
 # Welcome to Face-to-Face IT
 
-Face-to-Face Integrated Technologies helps human services teams navigate process, practice, and technology for service delivery. We primarily work with Native American communities and child welfare programs. Visit [facetofaceit.com](https://facetofaceit.com/).
+Face-to-Face Integrated Technologies helps human services teams navigate process, practice, and technology for service delivery. We primarily work with Native American communities and child welfare programs.
+
+[![Website](https://img.shields.io/badge/Website-facetofaceit.com-0f766e?style=for-the-badge)](https://facetofaceit.com/)
 
 ## What We Do
 
